@@ -13,12 +13,12 @@ const ResultCard = ({foto, perfil, seguidores, localidade, nome }: Props) => {
   return (
     <div className="result-card-container">
         <div className='img-container'>
-            <img src={Foto} alt="fotografia"/>
+            <img src={foto} alt="fotografia"/>
         </div>
 
       <div className="info-container">
         <p className='title'>Informações:</p>
-        <p className="info-item"><em className='field-caption'>Perfil: </em>{perfil}</p>
+        <p className="info-item"><em className='field-caption'>Perfil: </em> <em className='perfil'>{perfil}</em></p>
         <p className="info-item"><em className='field-caption'>Seguidores: </em>{seguidores}</p>
         <p className="info-item"><em className='field-caption'>Localidade: </em>{localidade}</p>
         <p className="info-item"><em className='field-caption'>Nome: </em>{nome}</p>
